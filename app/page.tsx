@@ -251,7 +251,7 @@ export default function LandingPage() {
         <div className="container mx-auto max-w-4xl">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
             {[
-              { number: 500, suffix: "+", label: "Companies Trust Us" },
+              { text: "Top", suffix: "+", label: "Companies Trust Us" },
               { number: 1000000, suffix: "+", label: "Documents Processed" },
               { number: 99, suffix: "%", label: "Accuracy Rate" },
               { number: 24, suffix: "/7", label: "Support Available" },
@@ -262,7 +262,11 @@ export default function LandingPage() {
                 style={{ animationDelay: `${index * 200}ms` }}
               >
                 <div className="text-3xl md:text-4xl font-bold text-gray-900">
-                  <AnimatedCounter end={stat.number} />
+                  {stat.text ? (
+                    <span className="text-gray-900">{stat.text}</span>
+                  ) : (
+                    stat.number !== undefined && <AnimatedCounter end={stat.number} />
+                  )}
                   <span className="text-purple-600">{stat.suffix}</span>
                 </div>
                 <p className="text-sm text-gray-600">{stat.label}</p>
@@ -617,7 +621,7 @@ export default function LandingPage() {
               </div>
               <p className="text-gray-400">Secure AI-driven document workflows for modern businesses.</p>
               <div className="flex space-x-4">
-                <Link href="#" className="text-gray-400 hover:text-white transition-all duration-300 hover:scale-125">
+                <Link href="https://github.com/devskale/dok.so" className="text-gray-400 hover:text-white transition-all duration-300 hover:scale-125">
                   <Github className="h-5 w-5" />
                 </Link>
                 <Link href="#" className="text-gray-400 hover:text-white transition-all duration-300 hover:scale-125">
@@ -660,7 +664,7 @@ export default function LandingPage() {
           </div>
 
           <div className="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
-            <p className="hover:text-white transition-colors duration-300">&copy; 2024 dok.so. All rights reserved.</p>
+            <p className="hover:text-white transition-colors duration-300">&copy; 2025 dok.so. All rights reserved.</p>
           </div>
         </div>
       </footer>
