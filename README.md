@@ -10,6 +10,40 @@
 This repository will stay in sync with your deployed chats on [v0.dev](https://v0.dev).
 Any changes you make to your deployed app will be automatically pushed to this repository from [v0.dev](https://v0.dev).
 
+## Tech Stack
+
+This project is built using:
+
+*   **Framework**: Next.js
+*   **Language**: TypeScript
+*   **Styling**: Tailwind CSS
+*   **Package Manager**: pnpm
+*   **Deployment**: Vercel
+
+## Local Setup
+
+To set up the project locally, follow these steps:
+
+1.  **Install dependencies**:
+    ```bash
+    pnpm install
+    ```
+2.  **Run the development server**:
+    ```bash
+    pnpm dev
+    ```
+    Open [http://localhost:3000](http://localhost:3000) in your browser to see the result.
+
+## Build
+
+To build the project for production, use the following command:
+
+```bash
+pnpm build
+```
+
+This will create a `build` directory with the production-ready assets.
+
 ## Deployment
 
 Your project is live at:
