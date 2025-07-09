@@ -62,3 +62,9 @@ Continue building your app on:
 2. Deploy your chats from the v0 interface
 3. Changes are automatically pushed to this repository
 4. Vercel deploys the latest version from this repository
+
+## HTML/CSS/JS Version
+
+A static HTML, CSS, and JavaScript version of this landing page is available in the `dok-so-simple/` directory. This version provides a lightweight, client-side implementation of the design and functionality.
+
+To view this version, open `dok-so-simple/index.html` in your web browser.
